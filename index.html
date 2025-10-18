@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <style>
+    body {
+      font-family: Arial;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    h2 { color: #333; }
+    #board {
+      display: grid;
+      gap: 5px;
+      margin-top: 20px;
+    }
+    .cell {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      border: 2px solid #333;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    #resetBtn {
+      margin-top: 20px;
+      padding: 8px 16px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Tic Tac Toe</h2>
+<div id="scoreboard">X: 0 | O: 0</div>
+<input type="number" id="size" placeholder="Enter board size (n)">
+<button id="startBtn">Start Game</button>
+<div id="board"></div>
+<button id="resetBtn">Reset</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
